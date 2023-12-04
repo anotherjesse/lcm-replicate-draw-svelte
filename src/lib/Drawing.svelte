@@ -164,8 +164,8 @@
     <div class="canvas-container">
         <canvas
             bind:this={drawCanvas}
-            width="768"
-            height="768"
+            width="512"
+            height="512"
             on:mousedown={startDrawing}
             on:mouseup={stopDrawing}
             on:mouseout={stopDrawing}
@@ -180,7 +180,7 @@
         <button on:click={copyToRender} disabled={isRendering}>
             {isRendering ? "Rendering..." : "Render"}
         </button>
-        <canvas bind:this={renderCanvas} width="768" height="768" />
+        <canvas bind:this={renderCanvas} width="512" height="512" />
     </div>
 </div>
 
